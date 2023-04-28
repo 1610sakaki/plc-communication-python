@@ -44,9 +44,10 @@ class MySocket:
         data = []
         try:
             data = self.sock.recv(1024)
+            return data
         except Exception:
             return -1
-        return data
+
 
 # 送信するコマンドを作成するためのクラス
 class MakeCommand:
@@ -112,4 +113,7 @@ def main(args):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    if len(sys.argv) > 1:
+        main(sys.argv[1])
+    else:
+        print("Please specify mode (r or w)")
