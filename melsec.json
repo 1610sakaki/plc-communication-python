@@ -10,7 +10,6 @@
         "unitio":"03FF",
         "unitno":"00"
     },
-
     "read":{
         "nlen":"0018",
         "cputimer":"0010",
