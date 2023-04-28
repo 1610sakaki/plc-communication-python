@@ -1,0 +1,31 @@
+{
+    "socket_settings":{
+    "IP":"192.168.2.39",
+    "port":"5015"
+    },
+    "common":{
+        "subheader":"5000",
+        "net":"00",
+        "pc":"FF",
+        "unitio":"03FF",
+        "unitno":"00"
+    },
+
+    "read":{
+        "nlen":"0018",
+        "cputimer":"0010",
+        "command":"0401",
+        "subcommand":"0000",
+        "device":"D*000000",
+        "number":"0001"
+    },
+    "write":{
+        "nlen":"001C",
+        "cputimer":"0010",
+        "command":"1401",
+        "subcommand":"0000",
+        "device":"D*000000",
+        "number":"0001",
+        "devicedata":"00FF"
+    }
+}
